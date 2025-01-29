@@ -4,12 +4,14 @@ import Layout from "../layout/Layout";
 import Drivers from "../pages/Drivers";
 import DriverDetail from "../pages/DriverDetail";
 import Teams from "../pages/Teams";
+import TeamDetail from "../pages/TeamDetail";
 
 export const route = {
   home: "/",
   drivers: "/drivers",
   driverDetail: "/drivers/:id",
   teams: "/teams",
+  teamDetail: "/team/:id",
 };
 
 const createRoute = (path, element) => ({
@@ -30,6 +32,7 @@ export const paths = [
       createRoute(route.drivers, <Drivers />),
       createRoute(route.driverDetail, <DriverDetail />),
       createRoute(route.teams, <Teams />),
+      createRoute(route.teamDetail, <TeamDetail />),
     ],
   },
 ];
