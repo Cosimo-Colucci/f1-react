@@ -20,7 +20,7 @@ import FrancoColapinto from '../../assets/drivers/Franco_Colapinto.png';
 import ValteriBottas from '../../assets/drivers/Valteri_Bottas.png';
 import KevinMagnussen from '../../assets/drivers/Kevin_Magnussen.png';
 import GuanyuZhou from '../../assets/drivers/Guanyu_Zhou.png';
-import NicoHulkenberg  from '../../assets/drivers/Nico_Hulkenberg .png';
+import NicoHülkenberg from '../../assets/drivers/Nico_Hülkenberg.png';
 
 
 const driverPhotos = {
@@ -43,7 +43,7 @@ const driverPhotos = {
     "Valteri Bottas": ValteriBottas,
     "Kevin Magnussen": KevinMagnussen,
     "Guanyu Zhou": GuanyuZhou,
-    "Nico Hulkenberg": NicoHulkenberg,
+    "Nico Hulkenberg": NicoHülkenberg,
 };
 
 const DriverCard = () => {
