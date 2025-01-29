@@ -64,6 +64,10 @@ function TeamCardList({year}) {
                 setLoading(false);
             });
     }, [year]);
+    
+    const handleDriverClick = (team) => {
+        navigate(`/teams/${team.id}`, { state: { team } });
+    };
 
     if (loading) {
         return <div>Loading...</div>;
@@ -72,7 +76,7 @@ function TeamCardList({year}) {
     if (error) {
         return <div>{error}</div>;
     }
-
+    
     return (
         <div className="w-full mt-12">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -80,6 +84,7 @@ function TeamCardList({year}) {
                     <div
                         key={team.id}
                         className="bg-white p-4 rounded shadow-md cursor-pointer flex justify-between hover:bg-gray-100 hover:shadow-lg"
+                        onClick={() => handleDriverClick(team)}
                     >
                         <div>
                             <h2 className="text-lg font-bold mb-2" style={{ fontFamily: 'Open Sans, sans-serif' }}>
